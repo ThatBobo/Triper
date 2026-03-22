@@ -9,7 +9,7 @@ export default defineConfig({
 
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
+      entry: path.resolve(__dirname, "src/index.js"),
       name: "TriperStripe",
       fileName: () => "triper.js",
       formats: ["es", "umd"]
