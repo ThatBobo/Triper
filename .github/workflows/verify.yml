@@ -24,6 +24,11 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Show dist folder
+        run: |
+          echo "=== DIST CONTENTS ==="
+          ls -R ./dist
+
       - name: Check for triper.js in dist
         run: |
           if [ ! -f "./dist/triper.js" ]; then
