@@ -1,17 +1,34 @@
 {
   "name": "triper",
   "version": "0.0.1",
-  "private": true,
+  "description": "Lightweight session-based payments for developers.",
+  "author": "ThatBobo",
+  "license": "MIT",
+
+  "main": "dist/triper.js",
+  "module": "dist/triper.js",
+  "types": "dist/index.d.ts",
+
+  "files": [
+    "dist"
+  ],
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish:npm": "npm publish --access public"
   },
+
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3"
   },
+
   "devDependencies": {
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
