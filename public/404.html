@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/Triper/" />
+    <meta charset="UTF-8" />
+    <script>
+      // Preserve the full path and query string
+      var redirectTo = "/Triper/" + window.location.pathname.replace("/Triper/", "") + window.location.search;
+      window.location.replace(redirectTo);
+    </script>
+    <title>Redirecting…</title>
   </head>
-  <body></body>
+  <body>
+    <p>Redirecting…</p>
+  </body>
 </html>
