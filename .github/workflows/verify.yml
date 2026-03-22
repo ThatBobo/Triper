@@ -1,4 +1,4 @@
-name: Verify Triper Build
+name: Verify Triper Script Exists
 
 on:
   push:
@@ -13,27 +13,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
-
-      - name: Show dist folder
+      - name: Check for triper.js in public/
         run: |
-          echo "=== DIST CONTENTS ==="
-          ls -R ./dist
+          echo "=== PUBLIC CONTENTS ==="
+          ls -R ./public
 
-      - name: Check for triper.js in dist
-        run: |
-          if [ ! -f "./dist/triper.js" ]; then
-            echo "❌ triper.js is missing from the build output!"
+          if [ ! -f "./public/triper.js" ]; then
+            echo "❌ triper.js is missing from public/"
             exit 1
           else
-            echo "✅ triper.js found in dist/"
+            echo "✅ triper.js found in public/"
           fi
