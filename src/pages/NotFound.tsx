@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function NotFound {
+export default function NotFound() {
   console.error("404 - Not Found");
   
   return (
