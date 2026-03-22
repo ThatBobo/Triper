@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         A simple and fast way to create payments without accounts or setup.
       </p>
 
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-4">
         <Link
           to="/Triper/create"
           className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
@@ -32,5 +32,5 @@ export default function Home() {
         Triper — lightweight payments for developers
       </footer>
     </main>
-  );
+  )
 }
