@@ -1,5 +1,5 @@
 {
-  "name": "triper",
+  "name": "triper-stripe",
   "version": "0.0.1",
   "description": "Lightweight session-based payments for developers.",
   "author": "ThatBobo",
