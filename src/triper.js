@@ -1,5 +1,5 @@
 // triper.js
-// This file is built by Vite and used by NON‑React users.
+// This file is built by Vite and used by NON-React users.
 // It imports the React component SOURCE and extracts logic from it.
 
 // Import the React component SOURCE CODE as raw text.
