@@ -10,7 +10,7 @@ export function TriperButton({ session, amount, children }: TriperButtonProps) {
   const handleClick = () => {
     // Redirect to your backend through Cloudflare Tunnel
     window.location.href =
-      `https://fridge-distinction-therefore-sophisticated.trycloudflare.com/pay/${session}`;
+      `https://marcus-production-additionally-cleaning.trycloudflare.com`;
   };
 
   return (
