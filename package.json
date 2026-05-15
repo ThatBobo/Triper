@@ -1,6 +1,6 @@
 {
   "name": "triper-stripe",
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "Lightweight session-based payments for developers.",
   "author": "ThatBobo",
   "license": "MIT",
